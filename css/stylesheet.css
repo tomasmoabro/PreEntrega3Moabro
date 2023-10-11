@@ -1,0 +1,18 @@
+.stylesheet-links{
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+    list-style-type: none;
+}
+
+.font-main{
+    font-family: 'fuente principal', 'Times New Roman', Times, serif;
+}
+
+.encabezado-home{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: #FA4D0C;
+}
+
