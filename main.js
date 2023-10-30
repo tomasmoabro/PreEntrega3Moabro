@@ -83,5 +83,43 @@ const actualizado = fechas.map((el) => {
 
 console.log(actualizado);
 
+let botonvip = document.getElementById("btnvip");
+botonvip.addEventListener("click", vip);
+
+function vip() {
+    console.log("esta persona quiere conocer los beneficios del vip")
+}
+
+let botondescuentos = document.getElementById ("btndesc");
+botondescuentos.onclick = () => {
+    console.log("click");
+}
+botondescuentos.onmousemove = () => {
+    console.log("move");
+}
+
+sessionStorage.setItem("edadAlumno", [ 20]);
+sessionStorage.setItem("esValido", true);
+sessionStorage.setItem("email", "tomas.jesus.moabro@gmail.com");
 
 
+let proyecto = 'Raves';
+let curso = 'js';
+
+localStorage.setItem('curso', curso);
+localStorage.setItem('proyecto', proyecto);
+
+let usuario = 'Profesor';
+let esTutor = true;
+
+sessionStorage.setItem('usuario', usuario);
+sessionStorage.setItem('esTutor', esTutor);
+
+let usuarioToJSON = JSON.stringify(usuario)
+
+console.log(usuarioToJSON);
+localStorage.setItem('usuarioToJSON', usuarioToJSON)
+
+let usuarioFromJSON = JSON.parse(localStorage.getItem('usuario'));
+
+console.log(usuarioFromJSON);
